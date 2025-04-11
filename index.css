@@ -80,7 +80,7 @@
     left: 0;
     height: 150vh;
     width: 100%;
-    background: linear-gradient(45deg, red, green, orange);
+    background: linear-gradient(45deg, red, purple, orange);
     background-size: 300% 300%;
     animation: color 10s ease-in-out infinite;
     z-index: -2; /* Adjusted to ensure it stays behind other elements */
