@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -49,8 +50,9 @@
     backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-    width: fit-content;
-    height: fit-content;
+    width: auto; /* Changed from fit-content to auto for better flexibility */
+    max-width: 90%; /* Added to prevent the glass container from being too wide */
+    height: auto; /* Changed from fit-content to auto */
     margin: auto;
 }
 
@@ -59,7 +61,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: fit-content;
+    width: auto; /* Changed from fit-content to auto for better flexibility */
     padding: 1em;
     background: rgba(0, 0, 0, 0.05);
     text-align: center;
@@ -81,7 +83,7 @@
     background: linear-gradient(45deg, red, green, orange);
     background-size: 300% 300%;
     animation: color 10s ease-in-out infinite;
-    z-index: -1;
+    z-index: -2; /* Adjusted to ensure it stays behind other elements */
 }
 
 @keyframes color {
@@ -168,6 +170,4 @@
     }
     100% {
         transform: translateY(-800px) rotate(360deg);
-        opacity: 0;
-    }
-}
+        
