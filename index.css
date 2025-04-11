@@ -25,6 +25,12 @@
     border-color: hotpink;
 }
 
+.page{
+    height: 1000;
+    overflow: auto;
+    margin: 20px 20px;
+}
+
 .glass{
     padding: 30px 50px;
     border-radius: 50px;
