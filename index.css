@@ -29,6 +29,14 @@
     border-color: hotpink;
 }
 
+/* Buttons Container */
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adds spacing between rows */
+    margin-bottom: 20px; /* Space between buttons and the log box */
+}
+
 /* Page Styles */
 .page {
     height: 100%;
@@ -42,6 +50,7 @@
 /* Glass Element */
 .glass {
     display: flex;
+    flex-direction: column; /* Ensure buttons and log stack vertically */
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -50,9 +59,9 @@
     backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-    width: auto; /* Changed from fit-content to auto for better flexibility */
-    max-width: 90%; /* Added to prevent the glass container from being too wide */
-    height: auto; /* Changed from fit-content to auto */
+    width: auto;
+    max-width: 90%; /* Prevent the glass container from being too wide */
+    height: auto;
     margin: auto;
 }
 
@@ -61,7 +70,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: auto; /* Changed from fit-content to auto for better flexibility */
+    width: auto; /* Adjusted for flexibility */
     padding: 1em;
     background: rgba(0, 0, 0, 0.05);
     text-align: center;
@@ -83,7 +92,7 @@
     background: linear-gradient(45deg, red, purple, orange);
     background-size: 300% 300%;
     animation: color 10s ease-in-out infinite;
-    z-index: -2; /* Adjusted to ensure it stays behind other elements */
+    z-index: -2; /* Ensure it stays behind other elements */
 }
 
 @keyframes color {
@@ -170,4 +179,6 @@
     }
     100% {
         transform: translateY(-800px) rotate(360deg);
-        
+        opacity: 0;
+    }
+}
