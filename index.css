@@ -44,13 +44,11 @@ html, body {
 
 /* Page Styles */
 .page {
-    height: 100%;
+    height: auto; /* Allow the page height to adjust based on content */
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: auto;
-    overflow-y: auto;
-    padding-top: 20px;
+    overflow-y: auto; /* Enable vertical scrolling */
     margin: 20px;
 }
 
