@@ -49,6 +49,8 @@ html, body {
     justify-content: center;
     align-items: center;
     overflow: auto;
+    overflow-y: auto;
+    padding-top: 20px;
     margin: 20px;
 }
 
