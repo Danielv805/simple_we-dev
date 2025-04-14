@@ -1,5 +1,5 @@
 html, body {
-    height: 200px;
+    height: 100%;
     overflow-y: auto;
 }
 
@@ -39,7 +39,7 @@ html, body {
     display: flex;
     flex-direction: column;
     gap: 10px; /* Adds spacing between rows */
-    margin-top: 20px
+    margin-top: 20px;
     margin-bottom: 20px; /* Space between buttons and the log box */
 }
 
